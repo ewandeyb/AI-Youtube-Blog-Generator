@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>AI Blog Generator</title>
+   <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 font-sans antialiased">
+   <!-- Navbar -->
+   <nav class= "bg-blue-700 p-4 text-white font-semibold flex justify-between">
+      <div>
+         <h1 class="font-bold text-3xl">Blogify</h1>
+      </div>
+      <div>
+         <a href = "#" class= "text-2xl hover:underline">Logout</a>
+      </div>
+   </nav>
+
+   <!-- Main -->
+   <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0 shadow-md transition-transform transform hover:scale-105">
+      <div class="max-w-3xl mx-auto bg-white p-6 rounded-lg">
+
+         <!-- Introduction section -->
+         <div class="text-center">
+            <h2 class="text-2xl justify-center">Welcome to <span class="font-bold">Blogify!</span></h2>
+            <p class="text-gray-700 mt-4">Generate Blogs from Youtube links in just <span class= "italic font-bold">seconds!</span></p>
+         </div>
+         <br>
+
+         <!-- Youtube Section -->
+         <div>
+            <h2 class="text-2xl font-semibold mb-4">Enter Youtube Link</h2>
+            <div class="flex space-x-4">
+               <input id="ytlink_input" type="url" placeholder="Youtube link here" class="flex-grow p-2 border border-blue-400 rounded-l-md">
+               <button id="submit" class="bg-green-400 p-4 rounded-lg py-4 px-4 hover:bg-green-500 transition-colors">Generate</button>
+         </div>
+
+         <!-- section for loading circle -->
+         <div id="loadingCircle" class="load">
+
+
+         </div>
+         
+         <!-- Generated Blog Display -->
+         <section class="flex-grow mt-10">
+            <h2 class="text-xl mb-4 font-semibold">Generated Blog Article</h2>
+            <div id="blogContent" class="mt-2 text-gray-700 space-y-4">
+               
+            </div>
+         </section>
+      </div>
+   </div>
+
+   <footer class=" bg-slate-200 ">
+      <p class="text-center">Possible with <a href="https://www.freecodecamp.org/" class="text-blue-950 font-semibold hover:text-black">freeCodeCamp.org</a></a></p>
+   </footer>
+
+   <script>
+
+   </script>
+</body>
+</html>
